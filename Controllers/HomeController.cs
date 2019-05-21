@@ -20,6 +20,11 @@ namespace Eliza.Controllers
             return View();
         }
 
+        public IActionResult Favoritos()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

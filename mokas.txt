@@ -1,0 +1,23 @@
+Pagina de Registo
+Login
+Pagina inicial autenticado
+	-nav: --Pesquisar
+	      --Favoritos
+	      --Historico
+	      --Dispensa
+	      --Lista de compras
+--Favoritos
+	-Lista de receitas
+--Historico
+	-Lista de receitas com datas
+--Dispensa == Lista de compras
+	--Lista de ingredientes com descrição e quantidade
+--Lista de compras
+	--Lista de ingredientes com descrição e quantidade
+	--butao para google maps onde adquir os produtos
+--Confeconar Receita
+	--Step by step
+--Consultar informações da receita
+	--Butao de adicionar a favoritos
+	--Butao para iniciar confecção
+	-
