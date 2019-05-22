@@ -1,0 +1,83 @@
+﻿@model Eliza.Models.Utilizador
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Utilizador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.porta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.porta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_postal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_postal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intolerancias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intolerancias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idUtilizador }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

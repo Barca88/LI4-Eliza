@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Eliza.Models.Utilizador>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.porta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cod_postal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intolerancias)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rua)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.porta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cod_postal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intolerancias)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idUtilizador }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idUtilizador }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idUtilizador })
+        </td>
+    </tr>
+}
+
+</table>
