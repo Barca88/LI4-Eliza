@@ -35,3 +35,13 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+Eliza/Web.config/
+Eliza/Global.asax/
+Eliza/packages.config
+Eliza/Scripts/
+Eliza/Content/
+Eliza/References/
+Eliza/Properties/
+Eliza/App_Data/
+
+
