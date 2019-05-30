@@ -38,6 +38,8 @@ msbuild.wrn
 Eliza/Web.config/
 Eliza/Global.asax/
 Eliza/packages.config
+packages/
+Eliza/[Ee]liza.csproj
 Eliza/Scripts/
 Eliza/Content/
 Eliza/References/
